@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="嘻哈猴">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>嘻哈猴 | 404！页面君找不到这个网页！！</title>
+    <link rel="icon" href="/img/avatar.jpeg">
+    
+<link rel="stylesheet" href="/css/404.css">
+
+    
+<!-- Baidu Analytics-->
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+	var hm = document.createElement("script");
+	hm.src = "https://hm.baidu.com/hm.js?ab2d808c5ec8e10d08db3396ec9ac2b9";
+	var s = document.getElementsByTagName("script")[0]; 
+	s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- End Analytics -->
+
+<meta name="generator" content="Hexo 5.3.0"></head>
+<body>
+    <div class="intro">
+        <div class="avatar">
+            <a href="/"><img src="/img/avatar.jpeg" alt="嘻哈猴"></a>
+        </div>
+        <div class="name">嘻哈猴</div>
+        <div class="error_404">
+            <p>404！页面君找不到这个网页！！</p>
+
+            <p><span id="jumpTo">30</span>秒后自动跳转回首页</p>
+        </div>
+        <div class="box">
+            <button class="homebtn button button--antiman button--round-l button--text-medium" onClick="window.open('/','_self')">返回首页</button>
+        </div>
+    </div>
+    <audio autoplay loop src="https://656e-env-jxscxxxxxxxxxxxxxxxxxxxxud.la/music/zenyang.mp3"></audio>
+<script type="text/javascript">
+    var i = 30;
+    function remainTime() {
+        if (i == 0) {
+            location.href = '/';
+        }
+        document.getElementById('jumpTo').innerHTML = i--;
+        setTimeout("remainTime()", 1000);
+    }
+    remainTime();
+</script>
+</body>
+</html>
