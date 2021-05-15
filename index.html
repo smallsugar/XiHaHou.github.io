@@ -157,6 +157,319 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
 
+<article id="post-使用hexo-github搭建个人博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/05/16/%E4%BD%BF%E7%94%A8hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">使用hexo+github搭建个人博客</a>
+    </h1>
+  
+
+        
+        <span style="margin-right: 3%;" class="archive-article-date">
+    <time datetime="2021-05-15T17:55:30.000Z" itemprop="datePublished"><i class="fas fa-calendar-alt" style="margin: 5px;"></i>2021-05-16</time>
+    
+        &nbsp; | &nbsp;
+        <time datetime="2021-05-15T17:55:30.000Z" itemprop="datePublished"><i class="fas fa-history " style="margin: 5px;"></i>2021-05-16</time>
+    
+</span>
+
+
+        <!-- 开始添加字数统计-->
+        
+        
+        
+
+        
+      </header>
+    
+
+    <div class="article-entry" itemprop="articleBody">
+        
+          <p>学习笔记</p>
+<h3 id="安装Nodejs"><a href="#安装Nodejs" class="headerlink" title="安装Nodejs"></a>安装Nodejs</h3><ul>
+<li>node -v    #查看node版本</li>
+<li>npm -v    #查看npm版本</li>
+<li>npm install -g cnpm –registry=<a target="_blank" rel="noopener" href="http://registry.npm.taobao.org/">http://registry.npm.taobao.org</a>    #安装淘宝的cnpm 管理器</li>
+<li>cnpm -v    #查看cnpm版本</li>
+<li>cnpm install -g hexo-cli    #安装hexo框架</li>
+<li>hexo -v    #查看hexo版本</li>
+<li>mkdir blog    #创建blog目录</li>
+<li>cd blog     #进入blog目录</li>
+<li>sudo hexo init     #生成博客 初始化博客</li>
+<li>hexo s    #启动本地博客服务</li>
+<li><a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a>    #本地访问地址</li>
+<li>hexo n “我的第一篇文章” #创建新的文章 </li>
+<li>返回blog目录</li>
+<li>hexo clean #清理</li>
+<li>hexo g #生成</li>
+<li>Github创建一个新的仓库 YourGithubName.github.io</li>
+<li>cnpm install –save hexo-deployer-git #在blog目录下安装git部署插件</li>
+</ul>
+<h3 id="配置-config-yml"><a href="#配置-config-yml" class="headerlink" title="配置_config.yml"></a>配置_config.yml</h3><hr>
+<pre><code># Deployment
+## Docs: https://github.com/smallsugar/smallsugar.github.io.git
+deploy:
+      type: git
+    repo: https://github.com/smallsugar/smallsugar.github.io.git
+      branch: master
+</code></pre>
+<hr>
+<ul>
+<li><p>hexo d    #部署到Github仓库里</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/smallsugar/smallsugar.github.io/">https://github.com/smallsugar/smallsugar.github.io/</a> #访问这个地址可以查看博客</p>
+</li>
+<li><p>git clone <a target="_blank" rel="noopener" href="https://github.com/litten/hexo-theme-yilia.git">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia  #下载yilia主题到本地</p>
+</li>
+</ul>
+<p>#修改hexo根目录下的 _config.yml 文件 ： theme: yilia</p>
+<ul>
+<li>hexo c    #清理一下</li>
+<li>hexo g    #生成</li>
+<li>hexo d    #部署到远程Github仓库</li>
+<li><a target="_blank" rel="noopener" href="https://smallsugar.github.io/">https://smallsugar.github.io/</a>  #查看博客</li>
+</ul>
+
+        
+
+      <!--版权-->
+
+      <!--打赏-->
+      
+
+
+
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/05/16/%E4%BD%BF%E7%94%A8hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top" style="font-size:23px">
+                <i class="fas fa-angle-up" style="color: #fff;"></i>
+            </a>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+
+<article id="post-Linux知识大全" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/05/16/Linux%E7%9F%A5%E8%AF%86%E5%A4%A7%E5%85%A8/">Linux 知识总结</a>
+    </h1>
+  
+
+        
+        <span style="margin-right: 3%;" class="archive-article-date">
+    <time datetime="2021-05-15T17:39:13.000Z" itemprop="datePublished"><i class="fas fa-calendar-alt" style="margin: 5px;"></i>2021-05-16</time>
+    
+        &nbsp; | &nbsp;
+        <time datetime="2021-05-15T17:39:13.000Z" itemprop="datePublished"><i class="fas fa-history " style="margin: 5px;"></i>2021-05-16</time>
+    
+</span>
+
+
+        <!-- 开始添加字数统计-->
+        
+        
+        
+
+        
+      </header>
+    
+
+    <div class="article-entry" itemprop="articleBody">
+        
+          <h3 id="模拟窗口-Terminal"><a href="#模拟窗口-Terminal" class="headerlink" title="模拟窗口 Terminal"></a>模拟窗口 Terminal</h3><h5 id="1-窗口常用命令-这些基本上够用"><a href="#1-窗口常用命令-这些基本上够用" class="headerlink" title="1.窗口常用命令(这些基本上够用)"></a>1.窗口常用命令(这些基本上够用)</h5><pre><code>Shif+Ctrl+N 新建窗口 
+Shif+Ctrl+T 在窗口中新建一个标签
+Shif+Ctrl+W 关闭当前标签
+Shif+Ctrl+Q 关闭当前窗口(包含开启的标签)
+Shif+Ctrl+C 复制
+Shif+Ctrl+V 黏贴  
+hif+Ctrl+F  打开搜索对画框
+</code></pre>
+<ul>
+<li><p>gnome-screenshot -h 截屏命令</p>
+<p>用法：<br>   gnome-screenshot [选项…] 对屏幕截图</p>
+<p>帮助选项：<br>-h, –help                   显示帮助选项<br>–help-all                   显示全部帮助选项<br>–help-gtk                   显示 GTK+ 选项</p>
+<p>应用程序选项：<br>-c, –clipboard              将截图直接发送到剪贴板<br>-w, –window                 截取窗口，而不是整个屏幕<br>-a, –area                   截取屏幕的一个区域，而不是整个屏幕<br>-b, –include-border         在截图中包含窗口边框<br>-B, –remove-border          去除屏幕截图的窗口边框<br>-p, –include-pointer        在截图中包含鼠标指针<br>-d, –delay=秒               在指定延迟后截图[以秒计]<br>-e, –border-effect=特效     添加到边框的特效(阴影 shadow 、边框 border 或无特效 none)<br>-i, –interactive            交互设置选项<br>-f, –file=文件名            将截图直接保存为该文件<br>–version                    打印版本信息并退出<br>–display=显示               要使用的 X 显示</p>
+<h5 id="2-文件操作"><a href="#2-文件操作" class="headerlink" title="2  文件操作"></a>2  文件操作</h5></li>
+<li><p>查看</p>
+</li>
+<li><p>创建 touch <file> 创建空文件</p>
+</li>
+<li><p>复制文件 cp -i current  目标文件名</p>
+</li>
+<li><p>重命名文件 mv </p>
+</li>
+<li><p>删除文件 rmdir ,rm -rf <file>, rm -ri <file></p>
+</li>
+<li><p>tree <file> 查看树突结构</p>
+</li>
+<li><p>查看文件类型(不常用)</p>
+<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="Code"><figure class="iseeu highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">file &lt;file&gt; 查看文件类型</span><br></pre></td></tr></table></figure></div></li>
+<li><p>cat <file> 查看文件内容</p>
+</li>
+<li><p>cat -n <file> 显示行号</p>
+</li>
+<li><p>cat -b  同上,只有文本显示行号(不常用)</p>
+</li>
+<li><p>cat -T 不出现制表符(俗称Tab键)</p>
+</li>
+</ul>
+<h3 id="PS-process-检测程序"><a href="#PS-process-检测程序" class="headerlink" title="PS(process) 检测程序"></a>PS(process) 检测程序</h3><h5 id="1-进程查看"><a href="#1-进程查看" class="headerlink" title="1.进程查看"></a>1.进程查看</h5><ul>
+<li>ps -ef  <div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="Code"><figure class="iseeu highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">likai@likai-NO1:~&#x2F;workspace$ ps -f</span><br><span class="line">UID        PID  PPID  C STIME TTY          TIME CMD</span><br><span class="line">likai     2819  2806  0 14:25 pts&#x2F;4    00:00:01 bash</span><br><span class="line">likai     5418  2819  0 15:16 pts&#x2F;4    00:</span><br></pre></td></tr></table></figure></div>
+<h5 id="2-结束进程"><a href="#2-结束进程" class="headerlink" title="2.结束进程"></a>2.结束进程</h5></li>
+<li>kill  -S 2819 (进程号) 强制结束</li>
+<li>killall 进程名 </li>
+</ul>
+<h4 id="查看挂载位置"><a href="#查看挂载位置" class="headerlink" title="查看挂载位置"></a>查看挂载位置</h4><p>mount </p>
+
+        
+
+      <!--版权-->
+
+      <!--打赏-->
+      
+
+
+
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/05/16/Linux%E7%9F%A5%E8%AF%86%E5%A4%A7%E5%85%A8/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top" style="font-size:23px">
+                <i class="fas fa-angle-up" style="color: #fff;"></i>
+            </a>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+
+<article id="post-详谈MVVM架构" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/05/16/%E8%AF%A6%E8%B0%88MVVM%E6%9E%B6%E6%9E%84/">详谈MVVM架构</a>
+    </h1>
+  
+
+        
+        <span style="margin-right: 3%;" class="archive-article-date">
+    <time datetime="2021-05-15T17:39:13.000Z" itemprop="datePublished"><i class="fas fa-calendar-alt" style="margin: 5px;"></i>2021-05-16</time>
+    
+        &nbsp; | &nbsp;
+        <time datetime="2021-05-15T17:39:13.000Z" itemprop="datePublished"><i class="fas fa-history " style="margin: 5px;"></i>2021-05-16</time>
+    
+</span>
+
+
+        <!-- 开始添加字数统计-->
+        
+        
+        
+
+        
+      </header>
+    
+
+    <div class="article-entry" itemprop="articleBody">
+        
+          
+        
+
+      <!--版权-->
+
+      <!--打赏-->
+      
+
+
+
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/05/16/%E8%AF%A6%E8%B0%88MVVM%E6%9E%B6%E6%9E%84/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top" style="font-size:23px">
+                <i class="fas fa-angle-up" style="color: #fff;"></i>
+            </a>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+
 <article id="post-Android-studio常用快捷总结" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
