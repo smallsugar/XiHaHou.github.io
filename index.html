@@ -157,23 +157,23 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
 
-<article id="post-使用hexo-github搭建个人博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+<article id="post-Mac如何解压rar文件，命令向解压rar文件" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/05/16/%E4%BD%BF%E7%94%A8hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">使用hexo+github搭建个人博客</a>
+      <a class="article-title" href="/2021/05/27/Mac%E5%A6%82%E4%BD%95%E8%A7%A3%E5%8E%8Brar%E6%96%87%E4%BB%B6%EF%BC%8C%E5%91%BD%E4%BB%A4%E5%90%91%E8%A7%A3%E5%8E%8Brar%E6%96%87%E4%BB%B6/">Mac如何解压rar文件，命令向解压rar文件</a>
     </h1>
   
 
         
         <span style="margin-right: 3%;" class="archive-article-date">
-    <time datetime="2021-05-15T17:55:30.000Z" itemprop="datePublished"><i class="fas fa-calendar-alt" style="margin: 5px;"></i>2021-05-16</time>
+    <time datetime="2021-05-27T15:56:10.000Z" itemprop="datePublished"><i class="fas fa-calendar-alt" style="margin: 5px;"></i>2021-05-27</time>
     
         &nbsp; | &nbsp;
-        <time datetime="2021-05-15T17:55:30.000Z" itemprop="datePublished"><i class="fas fa-history " style="margin: 5px;"></i>2021-05-16</time>
+        <time datetime="2021-05-27T15:56:10.000Z" itemprop="datePublished"><i class="fas fa-history " style="margin: 5px;"></i>2021-05-28</time>
     
 </span>
 
@@ -189,49 +189,16 @@ var _hmt = _hmt || [];
 
     <div class="article-entry" itemprop="articleBody">
         
-          <p>学习笔记</p>
-<h3 id="安装Nodejs"><a href="#安装Nodejs" class="headerlink" title="安装Nodejs"></a>安装Nodejs</h3><ul>
-<li>node -v    #查看node版本</li>
-<li>npm -v    #查看npm版本</li>
-<li>npm install -g cnpm –registry=<a target="_blank" rel="noopener" href="http://registry.npm.taobao.org/">http://registry.npm.taobao.org</a>    #安装淘宝的cnpm 管理器</li>
-<li>cnpm -v    #查看cnpm版本</li>
-<li>cnpm install -g hexo-cli    #安装hexo框架</li>
-<li>hexo -v    #查看hexo版本</li>
-<li>mkdir blog    #创建blog目录</li>
-<li>cd blog     #进入blog目录</li>
-<li>sudo hexo init     #生成博客 初始化博客</li>
-<li>hexo s    #启动本地博客服务</li>
-<li><a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a>    #本地访问地址</li>
-<li>hexo n “我的第一篇文章” #创建新的文章 </li>
-<li>返回blog目录</li>
-<li>hexo clean #清理</li>
-<li>hexo g #生成</li>
-<li>Github创建一个新的仓库 YourGithubName.github.io</li>
-<li>cnpm install –save hexo-deployer-git #在blog目录下安装git部署插件</li>
+          <h3 id="第一种方案"><a href="#第一种方案" class="headerlink" title="第一种方案"></a>第一种方案</h3><ul>
+<li>第一步 使用Homebrew安装unrar<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="Code"><figure class="iseeu highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install unrar  </span><br></pre></td></tr></table></figure></div></li>
+<li>第二步 cd到需要解压的rar文件的目录下，然后在终端输入下列命令：<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="Code"><figure class="iseeu highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ unrar x 需解压的文件目录</span><br></pre></td></tr></table></figure></div>
+此时 .rar 文件与 解压的文件夹在同一目录下。</li>
 </ul>
-<h3 id="配置-config-yml"><a href="#配置-config-yml" class="headerlink" title="配置_config.yml"></a>配置_config.yml</h3><hr>
-<pre><code># Deployment
-## Docs: https://github.com/smallsugar/smallsugar.github.io.git
-deploy:
-      type: git
-    repo: https://github.com/smallsugar/smallsugar.github.io.git
-      branch: master
-</code></pre>
-<hr>
-<ul>
-<li><p>hexo d    #部署到Github仓库里</p>
-</li>
-<li><p><a target="_blank" rel="noopener" href="https://github.com/smallsugar/smallsugar.github.io/">https://github.com/smallsugar/smallsugar.github.io/</a> #访问这个地址可以查看博客</p>
-</li>
-<li><p>git clone <a target="_blank" rel="noopener" href="https://github.com/litten/hexo-theme-yilia.git">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia  #下载yilia主题到本地</p>
-</li>
-</ul>
-<p>#修改hexo根目录下的 _config.yml 文件 ： theme: yilia</p>
-<ul>
-<li>hexo c    #清理一下</li>
-<li>hexo g    #生成</li>
-<li>hexo d    #部署到远程Github仓库</li>
-<li><a target="_blank" rel="noopener" href="https://smallsugar.github.io/">https://smallsugar.github.io/</a>  #查看博客</li>
+<h3 id="第二种方案-下载安装rar"><a href="#第二种方案-下载安装rar" class="headerlink" title="第二种方案 下载安装rar"></a>第二种方案 下载安装rar</h3><ul>
+<li>1.下载rar和unrar文件 <a target="_blank" rel="noopener" href="https://www.rarlab.com/download.htm">从rar官网 http://www.rarlab.com/ 下载rar for mac os</a></li>
+<li>2.安装rar和unrar命令<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="Code"><figure class="iseeu highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo install -c -o $USER rar &#x2F;usr&#x2F;local&#x2F;bin&#x2F;  ＃安装rar</span><br><span class="line">sudo install -c -o $USER unrar &#x2F;usr&#x2F;local&#x2F;bin  ＃安装unrar</span><br></pre></td></tr></table></figure></div></li>
+<li>3.利用rar和unrar压缩和解压文件<div class="highlight-wrap"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="false"data-rel="Code"><figure class="iseeu highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">rar和unrar文件的参数也很多，就不在一一介绍了，直接在Ternimal执行对应命令就能看到所有参数选项，下面列举几个常用的</span><br><span class="line"></span><br><span class="line">解压文件：unrar x test.rar</span><br><span class="line">压缩文件A和B：rar a 压缩后.rar A B</span><br></pre></td></tr></table></figure></div>
+<h3 id="如有不懂命令操作：请看Linux-知识总结"><a href="#如有不懂命令操作：请看Linux-知识总结" class="headerlink" title="如有不懂命令操作：请看Linux 知识总结"></a>如有不懂命令操作：请看<a target="_blank" rel="noopener" href="https://smallsugar.github.io/2021/05/16/Linux%E7%9F%A5%E8%AF%86%E5%A4%A7%E5%85%A8/">Linux 知识总结</a></h3></li>
 </ul>
 
         
@@ -251,7 +218,7 @@ deploy:
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/05/16/%E4%BD%BF%E7%94%A8hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/05/27/Mac%E5%A6%82%E4%BD%95%E8%A7%A3%E5%8E%8Brar%E6%96%87%E4%BB%B6%EF%BC%8C%E5%91%BD%E4%BB%A4%E5%90%91%E8%A7%A3%E5%8E%8Brar%E6%96%87%E4%BB%B6/">展开全文 >></a>
         </p>
       
 
@@ -700,6 +667,125 @@ hif+Ctrl+F  打开搜索对画框
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2021/02/03/hello-world/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top" style="font-size:23px">
+                <i class="fas fa-angle-up" style="color: #fff;"></i>
+            </a>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+
+<article id="post-使用hexo-github搭建个人博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/01/01/%E4%BD%BF%E7%94%A8hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">使用hexo+github搭建个人博客</a>
+    </h1>
+  
+
+        
+        <span style="margin-right: 3%;" class="archive-article-date">
+    <time datetime="2020-12-31T17:55:30.000Z" itemprop="datePublished"><i class="fas fa-calendar-alt" style="margin: 5px;"></i>2021-01-01</time>
+    
+        &nbsp; | &nbsp;
+        <time datetime="2020-12-31T17:55:30.000Z" itemprop="datePublished"><i class="fas fa-history " style="margin: 5px;"></i>2021-05-16</time>
+    
+</span>
+
+
+        <!-- 开始添加字数统计-->
+        
+        
+        
+
+        
+      </header>
+    
+
+    <div class="article-entry" itemprop="articleBody">
+        
+          <p>学习笔记</p>
+<h3 id="安装Nodejs"><a href="#安装Nodejs" class="headerlink" title="安装Nodejs"></a>安装Nodejs</h3><ul>
+<li>node -v    #查看node版本</li>
+<li>npm -v    #查看npm版本</li>
+<li>npm install -g cnpm –registry=<a target="_blank" rel="noopener" href="http://registry.npm.taobao.org/">http://registry.npm.taobao.org</a>    #安装淘宝的cnpm 管理器</li>
+<li>cnpm -v    #查看cnpm版本</li>
+<li>cnpm install -g hexo-cli    #安装hexo框架</li>
+<li>hexo -v    #查看hexo版本</li>
+<li>mkdir blog    #创建blog目录</li>
+<li>cd blog     #进入blog目录</li>
+<li>sudo hexo init     #生成博客 初始化博客</li>
+<li>hexo s    #启动本地博客服务</li>
+<li><a target="_blank" rel="noopener" href="http://localhost:4000/">http://localhost:4000/</a>    #本地访问地址</li>
+<li>hexo n “我的第一篇文章” #创建新的文章 </li>
+<li>返回blog目录</li>
+<li>hexo clean #清理</li>
+<li>hexo g #生成</li>
+<li>Github创建一个新的仓库 YourGithubName.github.io</li>
+<li>cnpm install –save hexo-deployer-git #在blog目录下安装git部署插件</li>
+</ul>
+<h3 id="配置-config-yml"><a href="#配置-config-yml" class="headerlink" title="配置_config.yml"></a>配置_config.yml</h3><hr>
+<pre><code># Deployment
+## Docs: https://github.com/smallsugar/smallsugar.github.io.git
+deploy:
+      type: git
+    repo: https://github.com/smallsugar/smallsugar.github.io.git
+      branch: master
+</code></pre>
+<hr>
+<ul>
+<li><p>hexo d    #部署到Github仓库里</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://github.com/smallsugar/smallsugar.github.io/">https://github.com/smallsugar/smallsugar.github.io/</a> #访问这个地址可以查看博客</p>
+</li>
+<li><p>git clone <a target="_blank" rel="noopener" href="https://github.com/litten/hexo-theme-yilia.git">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia  #下载yilia主题到本地</p>
+</li>
+</ul>
+<p>#修改hexo根目录下的 _config.yml 文件 ： theme: yilia</p>
+<ul>
+<li>hexo c    #清理一下</li>
+<li>hexo g    #生成</li>
+<li>hexo d    #部署到远程Github仓库</li>
+<li><a target="_blank" rel="noopener" href="https://smallsugar.github.io/">https://smallsugar.github.io/</a>  #查看博客</li>
+</ul>
+
+        
+
+      <!--版权-->
+
+      <!--打赏-->
+      
+
+
+
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/01/01/%E4%BD%BF%E7%94%A8hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
         </p>
       
 
